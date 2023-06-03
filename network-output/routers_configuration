@@ -1,0 +1,22 @@
+graph {
+	bgcolor="lightcoral:lemonchiffon" fontsize=16 fontstyle=bold label="NETWORK GRAPH" lblstyle=above nodesep=2.3 rankdir=LR ranksep=2
+	router007 [label="Router R1
+192.168.1.7" fillcolor=firebrick fontcolor=white shape=circle style=filled]
+	router007 -- router008 [arrowhead=None fontsize=13 headlabel="       ge-0/0/1 (72.114.97.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/2 (72.114.97.1/24)    "]
+	router007 -- router009 [arrowhead=None fontsize=13 headlabel="       ge-0/0/2 (72.114.96.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/1 (72.114.96.1/24)    "]
+	router008 [label="Router R2
+192.168.1.8" fillcolor=firebrick fontcolor=white shape=circle style=filled]
+	router008 -- router009 [arrowhead=None fontsize=13 headlabel="       ge-0/0/3 (72.114.98.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/2 (72.114.98.1/24)    "]
+	router009 [label="Router R3
+192.168.1.9" fillcolor=firebrick fontcolor=white shape=circle style=filled]
+	router009 -- router010 [arrowhead=None fontsize=13 headlabel="       ge-0/0/3 (72.114.100.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/4 (72.114.100.1/24)    "]
+	router009 -- router011 [arrowhead=None fontsize=13 headlabel="       ge-0/0/2 (72.114.99.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/1 (72.114.99.1/24)    "]
+	router010 [label="Router R4
+192.168.1.10" fillcolor=firebrick fontcolor=white shape=circle style=filled]
+	router010 -- router011 [arrowhead=None fontsize=13 headlabel="       ge-0/0/1 (72.114.101.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/1 (72.114.101.1/24)    "]
+	router011 [label="Router R5
+192.168.1.11" fillcolor=firebrick fontcolor=white shape=circle style=filled]
+	router011 -- router012 [arrowhead=None fontsize=13 headlabel="       ge-0/0/2 (72.114.102.2/24)     " lblstyle=above minlen=2.3 taillabel="           ge-0/0/3 (72.114.102.1/24)    "]
+	router012 [label="Router R6
+192.168.1.12" fillcolor=firebrick fontcolor=white shape=circle style=filled]
+}
